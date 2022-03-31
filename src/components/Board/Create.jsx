@@ -1,10 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
-import Aside from 'layouts/BaseLayout/Aside';
 import Footer from 'layouts/BaseLayout/Footer';
 import Header from 'layouts/BaseLayout/Header';
 
@@ -50,7 +49,7 @@ const BoardCreate = ({ createLink, preUrl }) => {
       })
         .then((res) => {
           setNewDatas([...newDatas, res]);
-          alert('생성이 완료되었습니다.');
+          alert('Creation is complete.');
           navi(`${preUrl}`);
         })
         .catch((err) => {

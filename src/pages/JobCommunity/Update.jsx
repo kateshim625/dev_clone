@@ -1,5 +1,3 @@
-import React from 'react';
-
 import BoardUpdate from 'components/Board/Update';
 
 const JobUpdate = () => {

@@ -39,7 +39,7 @@ const LoginForm = ({ setSuccess }) => {
       userData.map((person) =>
         person.username.toLowerCase() === user.toLowerCase() && person.password === pwd
           ? (setUser(''), setPwd(''), setSuccess(true), sessionStorage.setItem('user_id', user))
-          : setErrMsg('아이디, 비밀번호 재확인하세요.'),
+          : setErrMsg('Please check ID and Password.'),
       );
     } catch (err) {
       if (err.response) {
@@ -51,7 +51,7 @@ const LoginForm = ({ setSuccess }) => {
   return (
     <>
       <Link to="/">
-        <Title>SWFB STUDY</Title>
+        <Title>DEV STUDY</Title>
       </Link>
       <ContainerLogin>
         <ContainerUser onSubmit={handleSubmit}>
@@ -59,7 +59,7 @@ const LoginForm = ({ setSuccess }) => {
           {errMsg ? <ErrMsg>{errMsg}</ErrMsg> : <OffScreen />}
           <ContainerUserInfo>
             <ContainerInput>
-              <label htmlFor="username">사용자 ID</label>
+              <label htmlFor="username">User Id</label>
               <InputField
                 type="text"
                 id="username"
@@ -71,7 +71,7 @@ const LoginForm = ({ setSuccess }) => {
               />
             </ContainerInput>
             <ContainerInput>
-              <label htmlFor="password">비밀번호</label>
+              <label htmlFor="password">Password</label>
               <InputField
                 type="password"
                 id="password"

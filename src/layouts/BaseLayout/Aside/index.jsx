@@ -1,56 +1,51 @@
-// import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import Firstnav from "./Firstnav";
-import Socialnetworks from "./Socialnetworks";
-import Hashtags from "./Hashtags";
 import ad from '../../../assets/image/adimg.png';
-import { Link, useNavigate } from 'react-router-dom';
+import Firstnav from './Firstnav';
+import Hashtags from './Hashtags';
+import Socialnetworks from './Socialnetworks';
 
 const Aside = () => {
   return (
-
-    <>
-      <Wrapper>
-        <InnerBox>
-          <LeftNavbar>
-            
-            {/* Login */}
+    <Wrapper>
+      <InnerBox>
+        <LeftNavbar>
+          {/* Login */}
+          <IntroBox>
+            <IntroTitle>
+              <TitleLink>DEV Community</TitleLink> is a community of 790,675 amazing developers
+            </IntroTitle>
+            <IntroDesc>We&apos;re a place where coders share, stay up-to-date and grow their careers.</IntroDesc>
+            <EntryBtnGrop>
+              <SignUpBtn to="/register">Create account</SignUpBtn>
+              <LogInBtn to="/login">Log in</LogInBtn>
+            </EntryBtnGrop>
+          </IntroBox>
+          {/* Menu Bar */}
+          <Margin>
+            <Firstnav />
+          </Margin>
+          {/* Social Networks */}
+          <Margin>
+            <Socialnetworks />
+          </Margin>
+          {/* Hash Tags */}
+          <Margin>
+            <Hashtags />
+          </Margin>
+          {/* Ad */}
+          <IntroBox>
+            <AdImg />
+            <IntroTitle>
+              <TitleLink>Do you have your sticker pack yet?</TitleLink>
+            </IntroTitle>
+          </IntroBox>
+          {/* etc */}
+          <Margin>
             <IntroBox>
-              <IntroTitle>
-                <TitleLink>DEV Community</TitleLink> is a community of 790,675 amazing developers
-              </IntroTitle>
-              <IntroDesc>We're a place where coders share, stay up-to-date and grow their careers.</IntroDesc>
-              <EntryBtnGrop>
-                <SignUpBtn to="/register">Create account</SignUpBtn>
-                <LogInBtn to="/login">Log in</LogInBtn>
-              </EntryBtnGrop>
-            </IntroBox>
-            {/* Menu Bar */}
-            <Margin>
-              <Firstnav />
-            </Margin>
-            {/* Social Networks */}
-            <Margin>
-              <Socialnetworks />
-            </Margin>
-            {/* Hash Tags */}
-            <Margin>
-              <Hashtags />
-            </Margin>
-            {/* Ad */}
-            <IntroBox>
-              <AdImg></AdImg>
-              <IntroTitle>
-                <TitleLink>Do you have your sticker pack yet?</TitleLink>
-              </IntroTitle>
-            </IntroBox>
-            {/* etc */}
-            <Margin>
-            <IntroBox>
-              <IntroDesc>DEV runs on 100% open source code known as 
+              <IntroDesc>
+                DEV runs on 100% open source code known as
                 <ContentsLink>Forem.</ContentsLink>
                 Contribute to the codebase or host your own!
                 <StrongText>Check these out! 👇</StrongText>
@@ -60,39 +55,10 @@ const Aside = () => {
                 </CheckOutUl>
               </IntroDesc>
             </IntroBox>
-            </Margin>
-
-          </LeftNavbar>
-        </InnerBox>
-      </Wrapper>
-    </>
-
-    // <S.Ul>
-    //   <S.Li>
-    //     <NavLink to="/Board">
-    //       <FontAwesomeIcon icon={faQuoteRight} size="lg" />
-    //       자유 게시판
-    //     </NavLink>
-    //   </S.Li>
-    //   <S.Li>
-    //     <NavLink to="/studyBoard">
-    //       <FontAwesomeIcon icon={faQuoteRight} size="lg" />
-    //       스터디 게시판
-    //     </NavLink>
-    //   </S.Li>
-    //   <S.Li>
-    //     <NavLink to="/jobBoard">
-    //       <FontAwesomeIcon icon={faQuoteRight} size="lg" />
-    //       취업 게시판
-    //     </NavLink>
-    //   </S.Li>
-    //   <S.Li>
-    //     <NavLink to="/qnaBoard">
-    //       <FontAwesomeIcon icon={faQuoteRight} size="lg" />
-    //       QnA 게시판
-    //     </NavLink>
-    //   </S.Li>
-    // </S.Ul>
+          </Margin>
+        </LeftNavbar>
+      </InnerBox>
+    </Wrapper>
   );
 };
 
@@ -180,7 +146,7 @@ const LogInBtn = styled(Link)`
   }
 `;
 const AdImg = styled.img.attrs({
-  src: `${ad}`
+  src: `${ad}`,
 })`
   border-radius: 0.375rem;
 `;
@@ -200,29 +166,4 @@ const CheckOutLi = styled.li`
 const Margin = styled.div`
   margin: 16px 0 0;
 `;
-
-// const S = {
-//   Ul: styled.ul`
-//     position: fixed;
-//     width: 260px;
-//     background-color: #323232;
-//     color: #fff;
-//     height: calc(100vh - 80px);
-//   `,
-//   Li: styled.li`
-//     a {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       width: 100%;
-//       height: 100%;
-//       height: 60px;
-//       border-bottom: 1px solid rgba(236, 229, 255, 0.2);
-//     }
-//     svg {
-//       margin-right: 10px;
-//     }
-//   `,
-// };
-
 export default Aside;

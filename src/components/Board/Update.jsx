@@ -5,7 +5,6 @@ import { parseInt } from 'lodash';
 import { useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
-import Aside from 'layouts/BaseLayout/Aside';
 import Footer from 'layouts/BaseLayout/Footer';
 import Header from 'layouts/BaseLayout/Header';
 
@@ -43,7 +42,7 @@ const BoardUpdate = ({ boardUrl, preUrl }) => {
   const addTitle = (event) => {
     event.preventDefault();
     if (check.postid !== parseInt(password)) {
-      alert('비밀번호가 상이합니다.');
+      alert('Password is different.');
     } else {
       axios({
         method: 'PUT',
@@ -51,13 +50,13 @@ const BoardUpdate = ({ boardUrl, preUrl }) => {
         data: {
           username: check.username,
           postid: check.postid,
-          title: `${newTitle} (수정된 글)`,
+          title: `${newTitle} (Post Updated)`,
           contents: newcontent,
           id: parseInt(setid, 10),
         },
       })
         .then(() => {
-          alert('생성이 완료되었습니다.');
+          alert('Creation is complete.');
           navi(`/${preUrl}/${setid}`);
         })
         .catch((err) => {
@@ -96,12 +95,12 @@ const BoardUpdate = ({ boardUrl, preUrl }) => {
                 <DivButton>
                   <ButtonA href="#">Add a cover image</ButtonA>
                 </DivButton>
-                <TextAreaFirst height="auto" type="text" placeholder="제목" value={newTitle} onChange={onChange} />
+                <TextAreaFirst height="auto" type="text" placeholder="Title" value={newTitle} onChange={onChange} />
                 <hr />
                 <TextAreaFirst
                   height="80%"
                   className="text-area"
-                  placeholder="내용"
+                  placeholder="Contents"
                   value={newcontent}
                   onChange={onChange2}
                 />

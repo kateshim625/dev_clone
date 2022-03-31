@@ -1,5 +1,3 @@
-import React from 'react';
-
 import BoardCreate from 'components/Board/Create';
 
 const QnACreate = () => {

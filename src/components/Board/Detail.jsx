@@ -29,13 +29,13 @@ const BoardDetail = ({ boardUrl, replyUrl, updateUrl, preUrl }) => {
 
   const removeText = () => {
     if (newDatas.length > 0) {
-      if (window.confirm('삭제 하시겠습니까?')) {
+      if (window.confirm('Do you want to delete?')) {
         axios({
           method: 'DELETE',
           url: `${boardUrl}/${parseInt(setid, 10)}`,
         })
           .then(() => {
-            alert('삭제되었습니다.');
+            alert('This has been deleted.');
             navi(`${preUrl}`);
           })
           .catch((err) => {
@@ -88,7 +88,7 @@ const BoardDetail = ({ boardUrl, replyUrl, updateUrl, preUrl }) => {
                 <ProfileImg src={Profile} />
                 <IdPost>
                   <IdA href="#">{check.username}</IdA>
-                  <PostPtag>Posted on 2월23일</PostPtag>
+                  <PostPtag>Posted on 23. Feb</PostPtag>
                 </IdPost>
               </IDDiv>
               <LanguageTag>

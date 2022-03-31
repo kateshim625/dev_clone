@@ -1,5 +1,3 @@
-import React from 'react';
-
 import BoardDetail from 'components/Board/Detail';
 
 const JobDetail = () => {

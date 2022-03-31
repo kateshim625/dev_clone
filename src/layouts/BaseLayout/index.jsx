@@ -11,9 +11,7 @@ const BaseLayout = ({ children }) => {
       <Header />
       <Flex>
         <Aside />
-        <div>
-          {children}
-        </div>
+        <div>{children}</div>
         <AsideMain />
       </Flex>
       <Footer />
@@ -30,13 +28,3 @@ const Flex = styled.div`
 `;
 
 export default BaseLayout;
-
-// const Flex = styled.div`
-//   display: flex;
-//   padding-top: 80px;
-//   > div {
-//     position: relative;
-//     left: 260px;
-//     width: calc(100% - 260px);
-//   }
-// `;

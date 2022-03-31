@@ -79,18 +79,18 @@ const RegisterForm = ({ setSuccess }) => {
         setPwd('');
         setMatchPwd('');
       } else {
-        setErrMsg(`"${user}" 이미 사용된 사용자 ID 입니다.`);
+        setErrMsg(`"${user}" is already being used.`);
         userRef.current.focus();
       }
     } catch (err) {
-      setErrMsg('다시 시도해보세요.');
+      setErrMsg('Please try again.');
     }
   };
 
   return (
     <>
       <Link to="/">
-        <Title>SWFB STUDY</Title>
+        <Title>DEV STUDY</Title>
       </Link>
       <ContainerLogin>
         {errMsg ? <ErrMsg>{errMsg}</ErrMsg> : <OffScreen />}
@@ -99,7 +99,7 @@ const RegisterForm = ({ setSuccess }) => {
           <ContainerUserInfo>
             <ContainerInput>
               <label htmlFor="username">
-                사용자 ID:
+                User Id:
                 {!validName || !user ? (
                   <FontAwesomeIcon icon={faTimes} style={{ display: 'none' }} />
                 ) : (
@@ -122,16 +122,16 @@ const RegisterForm = ({ setSuccess }) => {
               <PasswordRequirements>
                 <FontAwesomeIcon icon={faInfoCircle} />
                 <br />
-                &nbsp; * 4~24자
+                &nbsp; * 4~24 character
                 <br />
-                &nbsp; * 문자로 시작해야함.
+                &nbsp; * must start with a letter.
                 <br />
-                &nbsp; * 문자, 숫자, _ , - 사용가능
+                &nbsp; * can be used with Letters, numbers, _ , -
               </PasswordRequirements>
             )}
             <ContainerInput>
               <label htmlFor="password">
-                비밀번호:
+                Password:
                 {validPwd ? (
                   <FontAwesomeIcon icon={faCheck} style={{ color: 'limegreen' }} />
                 ) : (
@@ -157,14 +157,14 @@ const RegisterForm = ({ setSuccess }) => {
             {pwdFocus && !validPwd && (
               <PasswordRequirements>
                 <FontAwesomeIcon icon={faInfoCircle} /> &nbsp;
-                <br /> &nbsp; * 8~24자
-                <br /> &nbsp; * 대문자, 소문자, 숫자, 특수문자 포함해야함.
-                <br /> &nbsp; * 가능 특수문자: ! @ # $ %
+                <br /> &nbsp; * 8 to 24 characters
+                <br /> &nbsp; * Must include uppercase letters, lowercase letters, numbers and special characters.
+                <br /> &nbsp; * Possible special characters: ! @ # $ %
               </PasswordRequirements>
             )}
             <ContainerInput>
               <label htmlFor="confirm_pwd">
-                비밀번호 재확인:
+                Confirm Password:
                 {validMatch && matchPwd ? (
                   <FontAwesomeIcon icon={faCheck} style={{ color: 'limegreen' }} />
                 ) : (
@@ -188,7 +188,7 @@ const RegisterForm = ({ setSuccess }) => {
               />
               {matchFocus && !validMatch && (
                 <PasswordRequirements>
-                  <FontAwesomeIcon icon={faInfoCircle} /> &nbsp; 비밀번호 매치 시켜주세요.
+                  <FontAwesomeIcon icon={faInfoCircle} /> &nbsp; Please match password.
                 </PasswordRequirements>
               )}
             </ContainerInput>

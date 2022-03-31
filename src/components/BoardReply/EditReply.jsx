@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import axios from 'axios';
 import styled from 'styled-components';
@@ -19,11 +19,11 @@ const EditReply = ({ replyUrl, replyId, setEdit, sameId, setCheckUseEffect, chec
       data: {
         loginid,
         sameId,
-        comment: `${newcontent} (수정된 댓글)`,
+        comment: `${newcontent} (Comment Updated)`,
         like: 0,
       },
     });
-    alert('댓글 수정완료.');
+    alert('Comment edit complete.');
     setEdit(false);
     setCheckUseEffect(!checkUseEffect);
   };
@@ -46,8 +46,8 @@ const EditReply = ({ replyUrl, replyId, setEdit, sameId, setCheckUseEffect, chec
           </CommentDiv>
           <div>
             <CommentBtnDiv>
-              <SubmitBtn type="submit" value="수정완료" onClick={changeComment} />
-              <DismissBtn onClick={hideButton}>취소</DismissBtn>
+              <SubmitBtn type="submit" value="Edit" onClick={changeComment} />
+              <DismissBtn onClick={hideButton}>Cancel</DismissBtn>
             </CommentBtnDiv>
           </div>
         </form>
@@ -127,8 +127,5 @@ const DismissBtn = styled.a`
     background: #00000009;
   }
 `;
-const LodingImg = styled.div`
-  margin: 0 auto;
-  display: table;
-`;
+
 export default EditReply;

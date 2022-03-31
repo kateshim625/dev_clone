@@ -1,33 +1,35 @@
-import React from 'react';
 import styled from 'styled-components';
 
 const MainPage = () => {
   return (
-    <>
-      <AsideMainRight>
-        <AsideSection>
-          <AsideHeader>
-            <AsideH3>Listing</AsideH3>
-            <div><SeeAllLink>See all</SeeAllLink></div>
-          </AsideHeader>
-
+    <AsideMainRight>
+      <AsideSection>
+        <AsideHeader>
+          <AsideH3>Listing</AsideH3>
           <div>
-            <AsideContent>
-              <AsideContentLink>
-                <AsideContentSeb>Build a Hulu Landing Page Clone with HTML, CSS & JAVASCRIPT</AsideContentSeb>
-                <PurposeOfContent>education</PurposeOfContent>
-              </AsideContentLink>
-            </AsideContent>
-            <AsideCreateListing>
-              <CreateListing>Create a Listing</CreateListing>
-            </AsideCreateListing>
+            <SeeAllLink>See all</SeeAllLink>
           </div>
-        </AsideSection>
-        
-        <Margin>
+        </AsideHeader>
+
+        <div>
+          <AsideContent>
+            <AsideContentLink>
+              <AsideContentSeb>Build a Hulu Landing Page Clone with HTML, CSS & JAVASCRIPT</AsideContentSeb>
+              <PurposeOfContent>education</PurposeOfContent>
+            </AsideContentLink>
+          </AsideContent>
+          <AsideCreateListing>
+            <CreateListing>Create a Listing</CreateListing>
+          </AsideCreateListing>
+        </div>
+      </AsideSection>
+
+      <Margin>
         <AsideSection>
           <AsideHeader>
-            <AsideH3><button>#Help</button></AsideH3>
+            <AsideH3>
+              <button type="button">#Help</button>
+            </AsideH3>
           </AsideHeader>
 
           <div>
@@ -37,50 +39,57 @@ const MainPage = () => {
                 <PurposeOfContent>37 comments</PurposeOfContent>
               </AsideContentLink>
             </AsideContent>
-            
+
             <AsideContent>
               <AsideContentLink>
                 <AsideContentSeb>Mapping Multiply Folders to 1 folder as pictured</AsideContentSeb>
-                <PurposeOfContent><AsideNewContent>New</AsideNewContent></PurposeOfContent>
+                <PurposeOfContent>
+                  <AsideNewContent>New</AsideNewContent>
+                </PurposeOfContent>
               </AsideContentLink>
             </AsideContent>
           </div>
         </AsideSection>
-        </Margin>
+      </Margin>
 
-        <Margin>
+      <Margin>
         <AsideSectionBotton>
           <AsideHeaderBottom>
             <h4>trending guides/resources</h4>
           </AsideHeaderBottom>
 
           <AsideContent>
-            <AsideContentSeb><AsideContentSebBtn>10 Frameworks Software Developers can learn in 2022</AsideContentSebBtn></AsideContentSeb>
+            <AsideContentSeb>
+              <AsideContentSebBtn>10 Frameworks Software Developers can learn in 2022</AsideContentSebBtn>
+            </AsideContentSeb>
           </AsideContent>
           <AsideContent>
-           <AsideContentSeb><AsideContentSebBtn>Git Cheat Sheet 📄 (50 commands + PDF and poster)</AsideContentSebBtn></AsideContentSeb>
+            <AsideContentSeb>
+              <AsideContentSebBtn>Git Cheat Sheet 📄 (50 commands + PDF and poster)</AsideContentSebBtn>
+            </AsideContentSeb>
           </AsideContent>
-
         </AsideSectionBotton>
-        </Margin>
+      </Margin>
 
-        <Margin>
+      <Margin>
         <AsideSectionBotton>
           <AsideHeaderBottom>
             <h4>recently queried</h4>
           </AsideHeaderBottom>
 
           <AsideContent>
-            <AsideContentSeb><AsideContentSebBtn>How to make a Discord bot</AsideContentSebBtn></AsideContentSeb>
+            <AsideContentSeb>
+              <AsideContentSebBtn>How to make a Discord bot</AsideContentSebBtn>
+            </AsideContentSeb>
           </AsideContent>
           <AsideContent>
-            <AsideContentSeb><AsideContentSebBtn>Software Engineer Personal Website</AsideContentSebBtn></AsideContentSeb>
+            <AsideContentSeb>
+              <AsideContentSebBtn>Software Engineer Personal Website</AsideContentSebBtn>
+            </AsideContentSeb>
           </AsideContent>
         </AsideSectionBotton>
-        </Margin>
-        
-      </AsideMainRight>
-    </>
+      </Margin>
+    </AsideMainRight>
   );
 };
 
@@ -124,7 +133,7 @@ const SeeAllLink = styled.a`
 const AsideContent = styled.div`
   padding: 16px;
   border-bottom: 1px solid #f5f5f5;
-  &:hover{
+  &:hover {
     background: #ffffff;
   }
 `;

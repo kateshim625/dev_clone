@@ -74,31 +74,31 @@ const BoardList = ({ boardUrl, detailUrl, createUrl }) => {
         <DisplayFlex>
           <Full>
             <FirstDiv>
-              <h2>커뮤니티</h2>
+              <h2>Community</h2>
               <h3>All</h3>
             </FirstDiv>
             <SecondDiv>
               <form onSubmit={changeList}>
                 <FirstInput placeholder="Serch..." value={searchData} onChange={(e) => setSearchData(e.target.value)} />
                 <SerchButton>
-                  <SerchA>검색</SerchA>
+                  <SerchA>Search</SerchA>
                 </SerchButton>
               </form>
             </SecondDiv>
             <Table>
               <Thead>
                 <tr>
-                  <Th>번호</Th>
-                  <Th>구분</Th>
-                  <Th>제목</Th>
-                  <Th>작성자</Th>
-                  <Th>작성일</Th>
-                  <Th>조회수</Th>
+                  <Th>Number</Th>
+                  <Th>Division</Th>
+                  <Th>Title</Th>
+                  <Th>Writer</Th>
+                  <Th>Date of Creation</Th>
+                  <Th>Views</Th>
                 </tr>
               </Thead>
               {currentPosts &&
                 currentPosts.map((a, i) => {
-                  return <Newli key={i} detailUrl={detailUrl} title={a.title} index={a.id} />;
+                  return <Newli key={i} detailUrl={detailUrl} title={a.title} index={a.id} username={a.username} />;
                 })}
             </Table>
             <LastDiv>
@@ -111,7 +111,7 @@ const BoardList = ({ boardUrl, detailUrl, createUrl }) => {
                 setCurrentPage={setCurrentPage}
               />
               <Link to={`/${createUrl}`}>
-                <SerchButton>{userId && <ButtonA href="#">글쓰기</ButtonA>}</SerchButton>
+                <SerchButton>{userId && <ButtonA href="#">Writing</ButtonA>}</SerchButton>
               </Link>
             </LastDiv>
           </Full>
@@ -124,9 +124,8 @@ const BoardList = ({ boardUrl, detailUrl, createUrl }) => {
   );
 };
 
-function Newli({ title, index, detailUrl }) {
+function Newli({ title, index, detailUrl, username }) {
   let [newindex, setNewIndex] = useState(`${index}`);
-
   return (
     <Tbody>
       <tr>
@@ -135,7 +134,7 @@ function Newli({ title, index, detailUrl }) {
         <Td>
           <Link to={`/${detailUrl}/detail/${newindex}`}>{title}</Link>
         </Td>
-        <Td>user</Td>
+        <Td>{username}</Td>
         <Td>data</Td>
         <Td>1</Td>
       </tr>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import BoardList from 'components/Board/List';
 
 const StudyList = () => {
