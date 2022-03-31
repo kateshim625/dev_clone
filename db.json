@@ -1,0 +1,351 @@
+{
+  "user": [
+    {
+      "username": "frank",
+      "password": "Frank@123",
+      "id": 1
+    },
+    {
+      "username": "frank1",
+      "password": "Frank@123",
+      "id": 2
+    },
+    {
+      "username": "Frank2",
+      "password": "Frank@123",
+      "id": 3
+    },
+    {
+      "username": "Frank10",
+      "password": "Frank@123",
+      "id": 4
+    },
+    {
+      "username": "jonghyeok",
+      "password": "Jong@123",
+      "id": 5
+    },
+    {
+      "username": "jong1",
+      "password": "Jong123!",
+      "id": 6
+    }
+  ],
+  "data": [
+    {
+      "id": 0,
+      "userImage": "https://res.cloudinary.com/practicaldev/image/fetch/s---NyHXHhr--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/277384/1189d7c5-5d95-4e5a-9a70-ab53d7d26559.jpeg",
+      "userName": "Michael Sakhniuk",
+      "date": "Jan 5 '21",
+      "title": "300+ React Interview Questions",
+      "hashTags": [
+        "react",
+        "webdev",
+        "javascript",
+        "beginners"
+      ],
+      "reactions": 2227,
+      "comments": 32,
+      "length": 128
+    },
+    {
+      "id": 1,
+      "userImage": "https://res.cloudinary.com/practicaldev/image/fetch/s--xf9y7XSm--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/307204/326109cb-a894-412a-b963-1cf36950736d.jpg",
+      "userName": "ThemeSelection",
+      "date": "Apr 7 '21",
+      "title": "Ultimate VueJS Resources🛠 For Developers👨‍💻",
+      "hashTags": [
+        "vue",
+        "javascript",
+        "webdev",
+        "beginners"
+      ],
+      "reactions": 596,
+      "comments": 3,
+      "length": 21
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [
+    {
+      "name": "typicode"
+    }
+  ],
+  "boards": [
+    {
+      "username": "jonghyeok",
+      "postid": 65465456465465,
+      "title": "The Cloud Waste Problem",
+      "contents": "With the public cloud adoption increasing year over year, companies will spend nearly $121.6 billion in IaaS (Infrastructure as a Service) in 2022 from AWS, Azure, Google, and other cloud service providersh111\n\n",
+      "id": 1
+    },
+    {
+      "username": "jonghyeok",
+      "postid": 123456,
+      "title": "아이디 추가 테스트",
+      "contents": "아이디 추가 테스트",
+      "id": 3
+    },
+    {
+      "username": "jonghyeok",
+      "postid": 546456,
+      "title": "test1 (수정된 글)",
+      "contents": "test1",
+      "id": 4
+    },
+    {
+      "username": "Frank",
+      "postid": 123,
+      "title": "스   트  ",
+      "contents": "스   트  ",
+      "id": 5
+    },
+    {
+      "username": "Frank",
+      "postid": 1234,
+      "title": "이름은 갈림 테스트 아니야 이름은 트 테스트",
+      "contents": "이름은 갈림 테스트 아니야 이름은 트 테스트",
+      "id": 6
+    },
+    {
+      "username": "frank",
+      "postid": null,
+      "title": "리액틑ㅌ트트트트트트",
+      "contents": "리액틑ㅌ트트트트트트",
+      "id": 7
+    },
+    {
+      "username": "frank",
+      "postid": null,
+      "title": "트트 리액틑ㅌ트트트트",
+      "contents": "트트 리액틑ㅌ트트트트",
+      "id": 8
+    },
+    {
+      "username": "frank",
+      "postid": null,
+      "title": "리 리리리리릴 액트 리액트 액트 리 ",
+      "contents": "리 리리리리릴 액트 리액트 액트 리 ",
+      "id": 9
+    }
+  ],
+  "boardsReply": [
+    {
+      "loginid": "jonghyeok",
+      "sameId": 3,
+      "comment": "나는나다",
+      "like": 0,
+      "id": 9
+    },
+    {
+      "loginid": "jong1",
+      "sameId": 3,
+      "comment": "좋아요",
+      "like": 0,
+      "id": 10
+    },
+    {
+      "loginid": "jong1",
+      "sameId": 1,
+      "comment": "test3",
+      "like": 0,
+      "id": 11
+    },
+    {
+      "loginid": "jong1",
+      "sameId": 1,
+      "comment": "안녕하세요.",
+      "like": 0,
+      "id": 12
+    },
+    {
+      "loginid": "jonghyeok",
+      "sameId": 1,
+      "comment": "폴더명 대문자로 변경 후 댓글 테스트 완료 (수정된 댓글)",
+      "like": 0,
+      "id": 14
+    },
+    {
+      "loginid": "jonghyeok",
+      "sameId": 1,
+      "comment": "ㄹㅇㄴㅁㄹ (수정된 댓글)",
+      "like": 0,
+      "id": 15
+    },
+    {
+      "loginid": "jonghyeok",
+      "sameId": 1,
+      "comment": "좋아요! (수정된 댓글)",
+      "like": 0,
+      "id": 16
+    }
+  ],
+  "studyBoards": [
+    {
+      "username": "jonghyeok",
+      "id": 1,
+      "title": "React 같이하실분 프로젝트까지 생각 중입니다.",
+      "contents": "React 같이하실분 프로젝트까지 생각 중입니다.\n"
+    },
+    {
+      "username": "jonghyeok",
+      "id": 2,
+      "title": "javascript 스터디원 1분 구합니다.",
+      "contents": "오픈 카톡:000000"
+    },
+    {
+      "username": "jonghyeok",
+      "id": 3,
+      "title": "django로 aibnb 클론코딩 하실분",
+      "contents": "제발요!!"
+    },
+    {
+      "username": "jonghyeok",
+      "postid": 123456789,
+      "title": "유저id테스트",
+      "contents": "유저 id테스트",
+      "id": 4
+    },
+    {
+      "username": "frank",
+      "postid": null,
+      "title": "리액트 ",
+      "contents": "리액트 ",
+      "id": 5
+    },
+    {
+      "username": "frank",
+      "postid": null,
+      "title": "리액트 트트트트트트",
+      "contents": "리액트 트트트트트트",
+      "id": 6
+    }
+  ],
+  "studyReply": [
+    {
+      "loginid": "jong1",
+      "sameId": 1,
+      "comment": "같이해요! 저도 React 공부해요!",
+      "like": 0,
+      "id": 8
+    },
+    {
+      "loginid": "jonghyeok",
+      "sameId": 1,
+      "comment": "test1",
+      "like": 0,
+      "id": 9
+    }
+  ],
+  "jobBoards": [
+    {
+      "username": "jonghyeok",
+      "postid": 65465456465465,
+      "title": "프론트엔드 신입1분 구합니다.",
+      "contents": "프론트엔드 신입1분 구합니다.",
+      "id": 1
+    },
+    {
+      "username": "jonghyeok",
+      "id": 2,
+      "title": "java 및 spring 백엔드 경력직 2분 구합니다.",
+      "contents": "아래 연락처로 이력서 및 연락 가능한 번호 1나 부탁드립니다."
+    },
+    {
+      "username": "jonghyeok",
+      "postid": 41556,
+      "title": "백엔드 1분 구합니다. spring,eclipse",
+      "contents": "아래로 문의 부탁드립니다.",
+      "id": 3
+    },
+    {
+      "username": "jonghyeok",
+      "postid": 123456789,
+      "title": "uerid test",
+      "contents": "uerid test",
+      "id": 4
+    }
+  ],
+  "jobReply": [
+    {
+      "loginid": "jong1",
+      "sameId": 1,
+      "comment": "저요 카카오톡 id:findajob123",
+      "like": 0,
+      "id": 8
+    },
+    {
+      "loginid": "jong1",
+      "sameId": 1,
+      "comment": "저도요!",
+      "like": 0,
+      "id": 9
+    },
+    {
+      "loginid": "jong1",
+      "sameId": 1,
+      "comment": "asdfa",
+      "like": 0,
+      "id": 10
+    }
+  ],
+  "qnaBoards": [
+    {
+      "username": "jonghyeok",
+      "postid": 65465456465465,
+      "title": "react props에 관해 질문드립니다.",
+      "contents": "너무 어려워요.",
+      "id": 1
+    },
+    {
+      "username": "jonghyeok",
+      "postid": 123456789,
+      "title": "uesrid test",
+      "contents": "userid test",
+      "id": 2
+    },
+    {
+      "username": "frank",
+      "postid": null,
+      "title": "리리액액트 스터디 ",
+      "contents": "리리액액트 스터디 ",
+      "id": 3
+    },
+    {
+      "username": "frank",
+      "postid": null,
+      "title": "스터디 ㅎㅎㅎ222 리액트 ",
+      "contents": "스터디 ㅎㅎㅎ222 리액트 ",
+      "id": 4
+    },
+    {
+      "username": "frank",
+      "postid": null,
+      "title": "리ㅎ2222 액트 ",
+      "contents": "스터디 ㅎㅎㅎ222 리액트 ",
+      "id": 5
+    }
+  ],
+  "qnaReply": [
+    {
+      "loginid": "jong1",
+      "sameId": 1,
+      "comment": "공부를 더 하세요",
+      "like": 0,
+      "id": 8
+    }
+  ]
+}
